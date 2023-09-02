@@ -31,9 +31,9 @@ if sys.version_info[0] == 3:
     import tkinter.messagebox
 else:
     # Must be using Python 2.x, import and rename
-    from Tkinter import *
-    import tkFileDialog
-    import tkMessageBox
+    from tkinter import *
+    import tkinter.filedialog
+    import tkinter.messagebox
 
     tkinter.filedialog = tkFileDialog
     del tkFileDialog
